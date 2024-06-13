@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# remover xfce
-
-sudo xbps-remove -R xfce4* xfwm4
-
-sudo xbps-remove -Oov
-
-sudo xbps-install -Sy elogind
