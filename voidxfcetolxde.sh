@@ -14,7 +14,7 @@ sudo xbps-install -Suy
 
 # instalar paquetes
 
-sudo xbps-install -Sy 7zip 7zip-unrar chromium epdfview epson-inkjet-printer-escpr flameshot galculator gpicview gutenprint hunspell-es imagescan iscan krita leafpad libreoffice libreoffice-i18n-es lxde nano neofetch smplayer
+sudo xbps-install -Sy 7zip 7zip-unrar bpytop chromium epdfview epson-inkjet-printer-escpr flameshot galculator gpicview gutenprint hunspell-es imagescan iscan krita leafpad libreoffice libreoffice-i18n-es lxde nano neofetch smplayer
 
 # instalar fonts
 
