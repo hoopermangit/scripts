@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# remover firefox
+
+sudo xbps-remove -R firefox
+
+# actualizar repositorios
+
+sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree void-repo-debug
+
+# actualizar sistema
+
+sudo xbps-install -Suy
+
+# instalar programas
+
+sudo xbps-install -Sy 7zip 7zip-unrar chromium epdfview epson-inkjet-printer-escpr flameshot galculator gpicview gutenprint
+hunspell-es imagescan iscan krita leafpad libreoffice libreoffice-i18n-es lxde nano neofetch smplayer
+
+# instalar fonts
+
+sudo cp -r Menlo.Font/ Windows.Fonts/ JetBrainsMono.Font/ /usr/share/fonts/
+
+sudo fc-cache -f -v
+
+# reiniciar sistema
+
+echo "reiniciar sistema con sudo reboot"
+echo "seleccionar lxde"
+echo "ejecutar removerxfce"
+sudo xbps-remove -R xfce4* xfwm4
+
+sudo xbps-remove -Oov
+
+
+
