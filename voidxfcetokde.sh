@@ -14,7 +14,7 @@ sudo xbps-install -Suy
 
 # instalar paquetes
 
-sudo xbps-install -Sy ark bpytop chromium epson-inkjet-printer-escpr filezilla galculator gimp gutenprint hunspell-es imagescan iscan kde5 kde5-baseapps krita libreoffice libreoffice-i18n-es mkvtoolnix-gui nano neofetch okular qbittorrent spectacle smplayer xournal
+sudo xbps-install -Sy ark bpytop chromium epson-inkjet-printer-escpr filezilla galculator gimp gutenprint hunspell-es imagescan iscan kde5 kde5-baseapps kolourpaint krita libreoffice libreoffice-i18n-es mkvtoolnix-gui nano neofetch okular qbittorrent spectacle smplayer xournal
 
 # instalar fonts
 
