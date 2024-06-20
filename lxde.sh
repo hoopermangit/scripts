@@ -18,7 +18,7 @@ sudo xbps-install -Sy 7zip 7zip-unrar bpytop chromium epdfview epson-inkjet-prin
 
 # instalar fonts
 
-sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Windows.Fonts/ /usr/share/fonts/
+sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
 
 sudo fc-cache -f -v
 
