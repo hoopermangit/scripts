@@ -18,7 +18,7 @@ sudo xbps-install -Sy ark bpytop chromium epson-inkjet-printer-escpr filezilla g
 
 # instalar fonts
 
-sudo cp -r Menlo.Font/ Windows.Fonts/ JetBrainsMono.Font/ /usr/share/fonts/
+sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Windows.Fonts/ /usr/share/fonts/
 
 sudo fc-cache -f -v
 
