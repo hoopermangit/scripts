@@ -58,7 +58,7 @@ Windows.Fonts
 Copiar Fonts
 ************
 
-sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Windows.Fonts/ /usr/bin/fonts
+sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts
 
 ***************************
 Actualizar caché de Fuentes
