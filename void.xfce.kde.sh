@@ -19,6 +19,14 @@ sudo fc-cache -f -v
 # remover lightdm
 sudo xbps-remove -R lightdm
 
+# remover xfce
+
+sudo xbps-remove -R xfce4* xfwm4
+
+sudo xbps-remove -R libxfce4ui-4.18.6_1 xfce-pulseaudio-plugin-0.4.8_1
+
+sudo xbps-remove -Oov
+
 # iniciar el servicio sddm
 sudo ln -s /etc/sv/sddm /var/service
 
