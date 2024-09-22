@@ -16,6 +16,9 @@ sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium curl epson-inkjet-
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
 sudo fc-cache -f -v
 
+# reiniciar sistema Seleccionar Plasma X11
+sudo reboot
+
 # remover lightdm
 sudo xbps-remove -R lightdm
 
@@ -30,9 +33,9 @@ sudo xbps-remove -Oov
 # iniciar el servicio sddm
 sudo ln -s /etc/sv/sddm /var/service
 
-# oh my bash
+# oh my bash Line 12 replace "font" with "powerline"
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 sudo nano -l -m /home/hooperman/.bashrc
-Line 12 replace "font" with "powerline"
 
 # reiniciar sistema
+sudo reboot
