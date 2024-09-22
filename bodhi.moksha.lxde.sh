@@ -1,20 +1,14 @@
 #!/bin/bash
 
-# remover firefox
-
-sudo xbps-remove -R firefox
-
 # actualizar repositorios
-
-sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree void-repo-debug
+sudo apt-get update
 
 # actualizar sistema
-
-sudo xbps-install -Suy
+sudo apt-get dist-upgrade
 
 # instalar paquetes
 
-sudo xbps-install -Sy 7zip 7zip-unrar bpytop chromium epdfview epson-inkjet-printer-escpr flameshot galculator gpicview gutenprint hunspell-es imagescan iscan krita leafpad libreoffice libreoffice-i18n-es lxde nano neofetch smplayer
+sudo apt-get install fastfetch hunspell-es libreoffice libreoffice-l10n-es lxde
 
 # instalar fonts
 
@@ -23,3 +17,4 @@ sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/sha
 sudo fc-cache -f -v
 
 # reiniciar sistema
+sudo reboot
