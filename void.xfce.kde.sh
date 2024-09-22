@@ -51,5 +51,7 @@ sudo usermod -aG lpadmin hooperman
 chmod +x JD2Setup_x64.sh
 ./JD2Setup_x64.sh
 
+#PhotoGIMP
+
 # reiniciar sistema
 sudo reboot
