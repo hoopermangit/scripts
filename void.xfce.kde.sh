@@ -10,7 +10,11 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # instalar paquetes
-sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium curl epson-inkjet-printer-escpr fastfetch filezilla galculator gimp gparted gutenprint hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui nano okular qbittorrent spectacle smplayer wget wine wine-32bit xournal
+sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch filezilla galculator gimp gparted gutenprint hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui nano okular qbittorrent spectacle smplayer wget wine wine-32bit xournal
+
+# servicio cupsd
+sudo ln -s /etc/sv/cupsd /var/service
+sudo usermod -aG lpadmin hooperman
 
 # instalar fonts
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
@@ -36,6 +40,12 @@ sudo ln -s /etc/sv/sddm /var/service
 # oh my bash Line 12 replace "font" with "powerline"
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 sudo nano -l -m /home/hooperman/.bashrc
+
+# imagen de fondo
+sudo cp /home/hooperman/Imágenes/Magna-Logo-Wallpaper-With-Plasma-Logo.png /usr/share/wallpapers/Magna/
+
+# imagen konsole
+sudo cp /home/hooperman/Imágenes/Bodhi.png /usr/share/wallpapers/Bodhi/
 
 # reiniciar sistema
 sudo reboot
