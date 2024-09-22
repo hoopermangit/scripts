@@ -12,10 +12,6 @@ sudo xbps-install -Suy
 # instalar paquetes
 sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch filezilla galculator gimp gparted gutenprint hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui nano okular qbittorrent spectacle smplayer wget wine wine-32bit xournal
 
-# servicio cupsd
-sudo ln -s /etc/sv/cupsd /var/service
-sudo usermod -aG lpadmin hooperman
-
 # instalar fonts
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
 sudo fc-cache -f -v
@@ -46,6 +42,14 @@ sudo cp /home/hooperman/Imágenes/Magna-Logo-Wallpaper-With-Plasma-Logo.png /usr
 
 # imagen konsole
 sudo cp /home/hooperman/Imágenes/Bodhi.png /usr/share/wallpapers/Bodhi/
+
+# servicio cupsd
+sudo ln -s /etc/sv/cupsd /var/service
+sudo usermod -aG lpadmin hooperman
+
+#JDownloader
+chmod +x JD2Setup_x64.sh
+./JD2Setup_x64.sh
 
 # reiniciar sistema
 sudo reboot
