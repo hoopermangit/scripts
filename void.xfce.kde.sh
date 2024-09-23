@@ -74,7 +74,10 @@ chmod +x JD2Setup_x64.sh
 
 # fmpegthumbs Abrir Dolphin, Configurar, Configurar Dolphin, Vistas Previas, marcar Archivos de Video (fmpegthumbs)
 
-# Windows Key + Flechas, atajos de teclado. Ver archivo Atajos.de.Teclado.png
+# Atajos de teclado
+# Windows Key + L: Bloquear la Sesion. Ver archivo Atajo.01.Bloquear.png
+# Windows Key + D: Dar Vistazo al Escritorio. Ver archivo Atajo.02.Escritorio.png
+# Windows Key + Flechas: Situar las Ventanas. Ver archivo Atajo..03.Ventanas.png
 
 # Configurar Spectacle. Ver archivo Spectacle.png
 
