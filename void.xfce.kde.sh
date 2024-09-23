@@ -10,7 +10,10 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # instalar paquetes
-sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch filezilla galculator gimp gparted gutenprint hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui nano okular qbittorrent spectacle smplayer wget wine wine-32bit xournal
+sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch filezilla galculator gimp gparted gutenprint gwenview hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui nano okular qbittorrent spectacle smplayer wget wine wine-32bit xournal
+
+# instalar playonlinux
+sudo xbps-install -Sy playonlinux
 
 # instalar fonts
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
@@ -36,14 +39,21 @@ sudo ln -s /etc/sv/sddm /var/service
 # oh my bash Line 12 replace "font" with "powerline"
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 sudo nano -l -m /home/hooperman/.bashrc
+source .bashrc
 
 # imagen de fondo
-sudo cp /home/hooperman/Imágenes/Magna-Logo-Wallpaper-With-Plasma-Logo.png /usr/share/wallpapers/Magna/
+# Ejecutar Dolphin.Root
+# /usr/share/wallpapers/
+# crear directorio Magna
+# Copiar /Fonds/Magna-Logo-Wallpaper-With-Plasma-Logo.png /usr/share/wallpapers/Magna/
 
 # imagen konsole
-sudo cp /home/hooperman/Imágenes/Bodhi.png /usr/share/wallpapers/Bodhi/
+# Ejecutar Dolphin.Root
+# /usr/share/wallpapers/
+# crear directorio Bodhi
+# Copiar /Fondos/Bodhi.png /usr/share/wallpapers/Bodhi/
 
-# servicio cupsd
+# servicio cupsd localhost:631
 sudo ln -s /etc/sv/cupsd /var/service
 sudo usermod -aG lpadmin hooperman
 
@@ -51,7 +61,16 @@ sudo usermod -aG lpadmin hooperman
 chmod +x JD2Setup_x64.sh
 ./JD2Setup_x64.sh
 
-#PhotoGIMP
+# Libre.Office.Tango.Theme
+# Doble click al archivo Tango-iconset.oxt
+
+# PhotoGIMP
+# Darle doble clic al archivo PhotoGIMP-master.zip e ir a la carpeta:
+# .var/app/org.gimp.GIMP/config/GIMP/2.10/
+# Seleccionar las carpetas desde brushes hasta unitrc
+# Arrastar estas carpetas a:
+# /home/hooperman/.config/GIMP/2.10/
+# Sobre escribir todos los archivos
 
 # reiniciar sistema
 sudo reboot
