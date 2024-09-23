@@ -10,7 +10,7 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # instalar paquetes
-sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch filezilla galculator gimp gparted gutenprint gwenview hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui nano okular qbittorrent spectacle smplayer wget wine wine-32bit xournal
+sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch filezilla fmpegthumbs galculator gimp gparted gutenprint gwenview hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync spectacle smplayer wget wine wine-32bit xournal
 
 # instalar playonlinux
 sudo xbps-install -Sy playonlinux
@@ -71,6 +71,18 @@ chmod +x JD2Setup_x64.sh
 # Arrastar estas carpetas a:
 # /home/hooperman/.config/GIMP/2.10/
 # Sobre escribir todos los archivos
+
+# fmpegthumbs Abrir Dolphin, Configurar, Configurar Dolphin, Vistas Previas, marcar Archivos de Video (fmpegthumbs)
+
+# Windows Key + Flechas, atajos de teclado. Ver archivo Atajos.de.Teclado.png
+
+# Configurar Spectacle. Ver archivo Spectacle.png
+
+# Activar Bloque Numerico
+
+# Ocultar Musica
+
+# Ocultar Archivos Recientes
 
 # reiniciar sistema
 sudo reboot
