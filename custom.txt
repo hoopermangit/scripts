@@ -1,7 +1,7 @@
 # bash custom
 sudo nano -l -m /home/hooperman/.bashrc
 Line 12 replace "font" with "powerline"
-source .bashrc
+Cerrar y Abrir Konsole
 
 # JDownloader
 chmod +x JD2Setup_x64.sh
