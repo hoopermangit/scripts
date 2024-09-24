@@ -1,0 +1,45 @@
+# bash custom
+sudo nano -l -m /home/hooperman/.bashrc
+Line 12 replace "font" with "powerline"
+source .bashrc
+
+# JDownloader
+chmod +x JD2Setup_x64.sh
+./JD2Setup_x64.sh
+
+# Libre.Office.Tango.Theme
+Doble click al archivo Tango-iconset.oxt
+
+# PhotoGIMP
+Darle doble clic al archivo PhotoGIMP-master.zip e ir a la carpeta:
+.var/app/org.gimp.GIMP/config/GIMP/2.10/
+Seleccionar las carpetas desde brushes hasta unitrc
+Arrastar estas carpetas a:
+/home/hooperman/.config/GIMP/2.10/
+Sobre escribir todos los archivos
+
+# fmpegthumbs
+Abrir Dolphin
+Configurar
+Configurar Dolphin
+Vistas Previas
+Archivos de Video (fmpegthumbs)
+
+# Atajos de teclado
+Windows Key + L: Bloquear la Sesion.
+Ver archivo Atajo.01.Bloquear.png
+
+Windows Key + D: Dar Vistazo al Escritorio.
+Ver archivo Atajo.02.Escritorio.png
+
+Windows Key + Flechas: Situar las Ventanas.
+Ver archivo Atajo..03.Ventanas.png
+
+# Spectacle.
+Ver archivo Spectacle.png
+
+# Activar Bloque Numerico
+
+# Ocultar Musica
+
+# Ocultar Archivos Recientes
