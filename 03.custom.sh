@@ -2,7 +2,7 @@
 
 # void linux personalizar kde
 
-# oh my bash Line 12 replace "font" with "powerline"
+# oh my bash
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 
 # imagen konsole e imagen de escritorio
