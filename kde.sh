@@ -19,13 +19,10 @@ sudo xbps-install -Sy playonlinux
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
 sudo fc-cache -f -v
 
-# oh my bash
-bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
-
-# imagen konsole e imagen de escritorio
+# imagenes konsole y escritorio
 sudo cp -r Bodhi/ Magna/ /usr/share/wallpapers/
 
-# añadir hooperman a grupo cups
+# añadir usuario a grupo cups
 sudo usermod -aG lpadmin hooperman
 
 # iniciar servicios
