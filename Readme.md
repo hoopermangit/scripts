@@ -1,2 +1,2 @@
-# Bodhi Moksha to LXDE
-# Void Linux XFCE to KDE
+# LXDE Bodhi Moksha
+# KDE Void Linux Base
