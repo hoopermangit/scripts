@@ -13,7 +13,6 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # instalar paquetes
-
 sudo xbps-install -Sy 7zip 7zip-unrar barrier barrier bpytop chromium cups curl elogind epdfview epson-inkjet-printer-escpr fastfetch filezilla flameshot galculator git gparted gpicview gutenprint hunspell-es imagescan iscan kolourpaint leafpad libreoffice libreoffice-i18n-es lxde mpv nano qbittorrent rsync smplayer wget
 
 # instalar fonts
