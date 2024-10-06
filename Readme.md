@@ -1,10 +1,9 @@
-# dolphin admin file manager
-# start inicio
+# dolphin kde admin file manager
 # bodhi lxde install
 # chmod permisos *.sh
 # custom aspecto
-# kde void base install
-# lxde void base install
+# kde install from void xfce
+# lxde install from void xfce
 # remove xfce
-# services kde
-# xfce void base install
+# start inicio
+# xfce install packages
