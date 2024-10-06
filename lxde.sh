@@ -13,7 +13,7 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # instalar paquetes
-sudo xbps-install -Sy 7zip 7zip-unrar barrier barrier bpytop chromium cups curl elogind epdfview epson-inkjet-printer-escpr fastfetch filezilla flameshot galculator gparted gpicview gutenprint hunspell-es imagescan iscan kolourpaint leafpad libreoffice libreoffice-i18n-es lxde mpv nano qbittorrent rsync smplayer wget
+7zip 7zip-unrar alsa-pipewire barrier barrier base-system bpytop brltty chromium chrony cryptsetup cups curl dejavu-fonts-ttf dialog elogind epdfview epson-inkjet-printer-escpr espeakup fastfetch filezilla flameshot font-misc-misc galculator git gnome-keyring gnome-themes-standard gparted gpicview grub-i386-efi grub-x86_64-efi gutenprint gvfs-afc gvfs-mtp gvfs-smb hunspell-es imagescan iscan kolourpaint leafpad libreoffice libreoffice-i18n-es lightdm lightdm-gtk3-greeter lvm2 lxde mdadm mpv nano network-manager-applet orca pipewire qbittorrent rsync setxkbmap smplayer terminus-font udisks2 void-docs-browse void-live-audio wget xauth xmirror xorg-input-drivers xorg-minimal xorg-video-drivers xtools-minimal
 
 # instalar fonts
 sudo cp -r Menlo.Font/ Windows.Fonts/ JetBrainsMono.Font/ /usr/share/fonts/
