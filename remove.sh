@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # remover firefox
-sudo xbps-remove -R firefox
+sudo xbps-remove -Ry firefox
 sudo xbps-remove -Oov
 
 # void linux remover xfce
