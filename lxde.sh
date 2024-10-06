@@ -3,7 +3,7 @@
 # void linux instalar lxde
 
 # remover firefox
-# sudo xbps-remove -R firefox
+# sudo xbps-remove -Ry firefox
 # sudo xbps-remove -Oov
 
 # actualizar repositorios
