@@ -26,10 +26,7 @@ sudo cp -r Bodhi/ Magna/ /usr/share/backgrounds/xfce/
 sudo usermod -aG lpadmin hooperman
 
 # iniciar servicios
-sudo ln -s /etc/sv/dbus /var/service
-sudo ln -s /etc/sv/NetworkManager /var/service
 sudo ln -s /etc/sv/cupsd /var/service
-sudo ln -s /etc/sv/lightdm /var/service
 
 # reiniciar sistema
 sudo reboot
