@@ -1,3 +1,6 @@
+# eliminar archivos huerfanos
+# sudo xbps-remove -Oov
+
 # oh my bash
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 sudo nano -l -m /home/hooperman/.bashrc
