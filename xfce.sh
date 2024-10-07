@@ -4,7 +4,6 @@
 
 # remover firefox
 sudo xbps-remove -Ry firefox
-sudo xbps-remove -Oov
 
 # actualizar repositorios
 sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree void-repo-debug
@@ -28,5 +27,4 @@ sudo usermod -aG lpadmin hooperman
 # iniciar servicios
 sudo ln -s /etc/sv/cupsd /var/service
 
-# reiniciar sistema
-sudo reboot
+# sudo reboot
