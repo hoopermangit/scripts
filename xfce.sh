@@ -27,4 +27,7 @@ sudo usermod -aG lpadmin hooperman
 # iniciar servicios
 sudo ln -s /etc/sv/cupsd /var/service
 
+# remover archivos huerfanos
+sudo xbps-remove -Oov
+
 # sudo reboot
