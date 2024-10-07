@@ -26,3 +26,5 @@ sudo usermod -aG lpadmin hooperman
 
 # iniciar servicios
 sudo ln -s /etc/sv/cupsd /var/service
+
+# sudo reboot
