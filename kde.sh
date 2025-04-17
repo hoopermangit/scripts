@@ -12,7 +12,7 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # instalar paquetes
-sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr fastfetch ffmpegthumbs filezilla galculator gimp gparted gwenview hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer spectacle unrar wget wine wine-32bit xournal
+sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl epson-inkjet-printer-escpr exfatprogs fastfetch ffmpegthumbs filezilla galculator gimp gparted gssmartcontrol gwenview hunspell-es imagescan iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer spectacle unrar wget wine wine-32bit xournal
 
 # instalar playonlinux
 sudo xbps-install -Sy playonlinux
