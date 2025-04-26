@@ -22,7 +22,8 @@ sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/sha
 sudo fc-cache -f -v
 
 # imagenes terminal y escritorio
-sudo cp -r Bodhi/ Magna/ /usr/share/wallpapers/
+sudo cp -r Bodhi/ /usr/share/wallpapers/
+sudo cp -r Magna/ /usr/share/wallpapers/
 
 # añadir usuario a grupo cups localhost:631
 sudo usermod -aG lpadmin hooperman
