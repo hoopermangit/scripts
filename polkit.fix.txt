@@ -1,0 +1,1 @@
+sudo mv /etc/xdg/autostart/polkit.desktop /home/hooperman/Descargas
