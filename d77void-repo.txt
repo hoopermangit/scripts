@@ -1,0 +1,23 @@
+d77void-repo
+
+To use it simply add a file like d77.conf to /etc/xbps.d/ with:
+
+repository=https://sourceforge.net/projects/d77void/files/d77void-repo
+
+That way you should be able to install the repository apps.
+
+Better-control is now available in a few ISOs as control panel. It is available to install in the repository as well.
+
+d77-welcome app has now the ability to install d77void repository.
+*********************************************************************************************************************
+
+*********************************************************************************************************************
+First ISOs released with Calamares and d77void-installer;
+
+You can now use the versatile TUI d77void-installer (based on void-installer) or calamares, the easy installer.
+
+To use calamares, please don't just click the button; it won't work. You need to be root, so open a terminal and type:
+
+su
+
+calamares
