@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# actualizar xbps
-sudo xbps-install -u xbps
-
 # actualizar repositorios
 sudo xbps-install -Sy void-repo-debug void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
 
