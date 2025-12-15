@@ -16,7 +16,7 @@ sudo xbps-install -Suy
 sudo xbps-install -Sy ark barrier barrier-gui bpytop chromium cups curl exfatprogs fastfetch ffmpegthumbs filezilla flatpak galculator gimp gparted gssmartcontrol gwenview hunspell-es kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer unrar wget xournal
 
 # instalar Jdownloader
-sudo flatpak install --from org.jdownloader.JDownloader.flatpakref
+sudo flatpak install --from JDownloader.flatpakref
 
 # instalar fonts
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
