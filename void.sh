@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# actualizar paquete xbps
-sudo xbps-install -u xbps
-
 # remover firefox
 sudo xbps-remove -Ry firefox
 
