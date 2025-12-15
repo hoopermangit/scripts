@@ -13,22 +13,22 @@ class CompletionView(Gtk.Box):
         icon.add_css_class("success")
         self.append(icon)
         
-        lbl = Gtk.Label(label="Installation erfolgreich!")
+        lbl = Gtk.Label(label="Installation successful!")
         lbl.add_css_class("title-1")
         self.append(lbl)
         
-        lbl2 = Gtk.Label(label="Das System ist nun bereit.")
+        lbl2 = Gtk.Label(label="The system is now ready.")
         self.append(lbl2)
         
         box_btn = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
         box_btn.set_halign(Gtk.Align.CENTER)
         self.append(box_btn)
         
-        btn_quit = Gtk.Button(label="Beenden")
+        btn_quit = Gtk.Button(label="Finish")
         btn_quit.connect("clicked", on_quit)
         box_btn.append(btn_quit)
         
-        btn_reboot = Gtk.Button(label="Neustarten")
+        btn_reboot = Gtk.Button(label="Reboot")
         btn_reboot.add_css_class("suggested-action")
         btn_reboot.connect("clicked", on_reboot)
         box_btn.append(btn_reboot)

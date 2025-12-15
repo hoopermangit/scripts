@@ -19,7 +19,7 @@ except ValueError:
 
 from gi.repository import Gtk, Gdk, Gio
 
-# Views importieren
+# Import views
 from welcome_view import WelcomeView
 from system_config_view import SystemConfigView
 from user_config_view import UserConfigView
@@ -48,20 +48,18 @@ class InstallerApp(BaseApp):
             
             main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
             
-            # --- Sprachauswahl ---
-            # Wir bauen eine ComboBox für die Sprache
+            # --- Language Selection ---
+            # We are building a ComboBox for the Language
             lang_store = Gtk.ListStore(str, str) # ID, Label
             lang_store.append(["en", "🇬🇧 English"])
-            lang_store.append(["de", "🇩🇪 Deutsch"])
             lang_store.append(["es", "🇪🇸 Español"])
-            lang_store.append(["fr", "🇫🇷 Français"])
-            
+
             self.cmb_lang = Gtk.ComboBox(model=lang_store)
             renderer = Gtk.CellRendererText()
             self.cmb_lang.pack_start(renderer, True)
             self.cmb_lang.add_attribute(renderer, "text", 1)
             self.cmb_lang.set_active_id("en") # Default in UI logic
-            # Setze aktive ID basierend auf translations.py
+            # Set active ID based on translations.py
             for row in lang_store:
                 if row[0] == translations.CURRENT_LANG:
                     self.cmb_lang.set_active_iter(row.iter)
@@ -79,7 +77,7 @@ class InstallerApp(BaseApp):
                 self.btn_back.set_sensitive(False)
                 header.pack_start(self.btn_back)
                 
-                # Sprache links hinzufügen
+                # Add language on the left
                 header.pack_start(self.cmb_lang)
                 
                 self.btn_next = Gtk.Button(label=T("btn_next"), css_classes=["suggested-action"])
@@ -100,7 +98,7 @@ class InstallerApp(BaseApp):
                 
                 hb.append(Gtk.Box(hexpand=True))
                 
-                # Sprache
+                # Language
                 hb.append(self.cmb_lang)
                 
                 self.btn_back = Gtk.Button(label=T("btn_back"))
@@ -124,8 +122,8 @@ class InstallerApp(BaseApp):
         self.window.present()
 
     def _init_views(self):
-        # Hilfsmethode um Views (neu) zu laden
-        # Alte löschen falls vorhanden (bei Sprachwechsel)
+        # Helper method to (re)load views
+        # Delete old versions if any exist (when changing languages)
         while self.stack.get_pages().get_n_items() > 0:
             child = self.stack.get_pages().get_item(0).get_child()
             self.stack.remove(child)
@@ -156,14 +154,14 @@ class InstallerApp(BaseApp):
                 print(f"Switching language to {lang_code}")
                 translations.set_language(lang_code)
                 
-                # UI Refresh Hack: Wir merken uns die aktuelle Seite, laden alle Views neu und gehen zurück
+                # UI Refresh Hack: We save the current page, reload all views, and go back
                 curr = self.stack.get_visible_child_name() or "welcome"
                 self._init_views()
                 self.stack.set_visible_child_name(curr)
                 
-                # Buttons aktualisieren
+                # Buttons update
                 self.btn_back.set_label(T("btn_back"))
-                # Next label hängt vom Kontext ab, wird in _on_page gesetzt
+                # Next label depends on the context, is set in _on_page
                 self._on_page(self.stack, None)
 
     def _load_css(self):
@@ -174,7 +172,7 @@ class InstallerApp(BaseApp):
 
     def _on_page(self, s, _):
         n = s.get_visible_child_name()
-        # Titel aktualisieren
+        # Update title
         t_map = {
             "welcome": "step_welcome", "system": "step_system", "user": "step_user", 
             "part": "step_part", "summary": "step_summary", "install": "step_install", "done": "step_done"

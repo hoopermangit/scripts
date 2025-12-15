@@ -4,21 +4,16 @@ from gi.repository import Gtk
 from translations import T
 
 LANG_MAP = {
-    "Deutsch (de_DE.UTF-8)": "de_DE.UTF-8",
     "English (en_US.UTF-8)": "en_US.UTF-8",
-    "Français (fr_FR.UTF-8)": "fr_FR.UTF-8",
-    "Español (es_ES.UTF-8)": "es_ES.UTF-8",
+    "Español (es_PA.UTF-8)": "es_PA.UTF-8",
 }
 
 KEYMAPS = [
-    ("Deutsch (de)", "de"),
-    ("Deutsch - Nodeadkeys (de-nodeadkeys)", "de-nodeadkeys"),
     ("English US (us)", "us"),
-    ("Français (fr)", "fr"),
     ("Español (es)", "es"),
 ]
 
-TIMEZONES = ["Europe/Berlin", "Europe/Paris", "Europe/Madrid", "Europe/London", "America/New_York", "UTC"]
+TIMEZONES = ["America/New_York", "America/Panama"]
 
 class SystemConfigView(Gtk.Box):
     def __init__(self):
