@@ -1,0 +1,113 @@
+/* ui.css - Dark/Light Mode kompatibel */
+
+/* Globale Einstellungen für das Fenster */
+window {
+    font-family: Cantarell, Sans-Serif;
+    font-size: 11pt;
+}
+
+/* Titel-Stile dynamisch anhand der Systemfarbe */
+.title-1 {
+    font-size: 24pt;
+    font-weight: 800;
+    color: @theme_fg_color;
+    margin-bottom: 10px;
+}
+
+.title-2 {
+    font-size: 18pt;
+    font-weight: bold;
+    color: @theme_fg_color;
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.title-3 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: alpha(@theme_fg_color, 0.8);
+}
+
+.title-4 {
+    font-size: 11pt;
+    font-weight: bold;
+    color: alpha(@theme_fg_color, 0.7);
+    margin-bottom: 4px;
+}
+
+/* Header Bar (Leiste oben) */
+.header-bar {
+    background-color: @headerbar_bg_color;
+    border-bottom: 1px solid @borders;
+    color: @theme_fg_color;
+    padding: 6px;
+}
+
+/* Cards (Rahmen um Gruppen) */
+.card {
+    /* Benutze System-Hintergrundfarbe für Views/Listen */
+    background-color: @view_bg_color; 
+    color: @view_fg_color;
+    border: 1px solid @borders;
+    border-radius: 8px;
+    padding: 12px;
+    /* Leichter Schatten für Tiefe */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+.suggested-action {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    font-weight: bold;
+}
+
+.destructive-action {
+    background-color: #e01b24;
+    color: white;
+}
+
+/* Listen */
+.boxed-list {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+    border: 1px solid @borders;
+    border-radius: 8px;
+}
+
+list {
+    background-color: transparent;
+}
+
+row {
+    padding: 8px;
+}
+
+/* Label Farben korrigieren */
+label {
+    color: @theme_fg_color;
+}
+
+/* Dimmed Label (für Hinweise) */
+.dim-label {
+    color: alpha(@theme_fg_color, 0.5);
+    font-size: 0.9em;
+}
+
+/* Icons */
+.success {
+    color: #2ecc71;
+}
+
+.warning {
+    color: #f39c12;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+/* Scrollbars anpassen (optional) */
+scrolledwindow {
+    border: none;
+}
