@@ -1,6 +1,5 @@
 # dolphin root desktop kde admin file manager
 # bodhi lxde install
-# chmod +x *.sh
 # custom
 # elogind install for lxde after remove xfce
 # kde install from void xfce
