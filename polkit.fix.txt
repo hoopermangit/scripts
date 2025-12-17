@@ -1,6 +1,3 @@
-Remove XFCE
-./remove.sh
-
 Move LXPolKit
 sudo mv /etc/xdg/autostart/lxpolkit.desktop /home/hooperman/Descargas
 
