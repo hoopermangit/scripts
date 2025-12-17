@@ -42,4 +42,5 @@ sudo xbps-install -Sy elogind
 # remove orphaned files
 sudo xbps-remove -Oov
 
+# sudo reboot
 sudo reboot
