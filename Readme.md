@@ -1,12 +1,10 @@
 # dolphin root desktop kde admin file manager
-# bodhi lxde install
+# bodhi lxde install from moksha
 # custom
 # elogind install for lxde after remove xfce
-# kde install from void xfce
-# linuxero install from base
-# lxde install from void xfce
+# kde install from xfce
+# lxde install from xfce
 # maintenance
-# polkit fix
+# polkit fix after remove xfce
 # remove xfce
 # start
-# xfce install packages from base
