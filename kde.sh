@@ -1,31 +1,31 @@
 #!/bin/bash
 
-# void linux instalar kde
+# void linux install kde from xfce
 
-# remover firefox
+# remove firefox
 sudo xbps-remove -Ry firefox
 
-# actualizar repositorios
+# update repositories
 sudo xbps-install -Sy void-repo-debug void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
 
-# actualizar sistema
+# update system
 sudo xbps-install -Suy
 
-# instalar paquetes
-sudo xbps-install -Sy ark bpytop chromium cups curl epson-inkjet-printer-escpr exfatprogs fastfetch ffmpegthumbs filezilla galculator gimp gparted gsmartcontrol gutenprint gwenview hblock hunspell-es iscan kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer spectacle topgrade unrar wget wine wine-32bit xtools-minimal xournal
+# install packages
+sudo xbps-install -Sy ark bpytop chromium cups curl exfatprogs fastfetch ffmpegthumbs filezilla flatpak galculator gimp gparted gsmartcontrol gutenprint gwenview hblock hunspell-es kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer topgrade unrar wget xtools-minimal xournal
 
-# instalar playonlinux
-sudo xbps-install -Sy playonlinux
+# install Jdownloader
+flatpak install --from JDownloader.flatpakref
 
-# instalar fonts
+# install fonts
 sudo cp -r JetBrainsMono.Font/ Menlo.Font/ Office.Fonts/ Windows.Fonts/ /usr/share/fonts/
 sudo fc-cache -f -v
 
-# imagenes terminal y escritorio
+# images for terminal and desktop
 sudo cp -r Bodhi/ /usr/share/wallpapers/
 sudo cp -r Magna/ /usr/share/wallpapers/
 
-# añadir usuario a grupo cups localhost:631
+# add user hooperman to cups localhost:631
 sudo usermod -aG lpadmin hooperman
 
 # remove xfce
@@ -34,6 +34,6 @@ sudo xbps-remove -Ry xfce4* xfwm4
 # remove orphaned files
 sudo xbps-remove -Oov
 
-# iniciar servicios
+# start services
 sudo ln -s /etc/sv/cupsd /var/service
 sudo ln -s /etc/sv/sddm /var/service
