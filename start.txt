@@ -1,4 +1,5 @@
-# sudo xbps-install -Suy
+# sudo xbps-install -u xbps
 # sudo xbps-install -Sy git
 # git clone https://github.com/hoopermangit/scripts
-# sudo reboot
+# cd scripts
+# chmod +x *.sh
