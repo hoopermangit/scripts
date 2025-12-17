@@ -1,45 +1,45 @@
 #!/bin/bash
 
-# void linux instalar lxde
+# void linux install lxde from xfce
 
-# remover firefox
+# remove firefox
 sudo xbps-remove -Ry firefox
 
-# actualizar repositorios
+# update repositories
 sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree void-repo-debug
 
-# actualizar sistema
+# update system
 sudo xbps-install -Suy
 
-# instalar paquetes
+# install packages
 sudo xbps-install -Sy 7zip 7zip-unrar barrier barrier bpytop chromium cups curl epson-inkjet-printer-escpr exfatprogs fastfetch filezilla flameshot galculator gparted gwenview hunspell-es iscan kolourpaint leafpad libreoffice libreoffice-i18n-es lxde mpv nano okular qbittorrent rsync smplayer wget
 
-# instalar fonts
+# install fonts
 sudo cp -r Menlo.Font/ Windows.Fonts/ JetBrainsMono.Font/ /usr/share/fonts/
 sudo fc-cache -f -v
 
-# imagenes terminal y escritorio
+# images for terminal and desktop
 sudo cp -r Bodhi/ Magna/ /usr/share/lxde/wallpapers/
 
-# añadir usuario a grupo cups localhost:631
+# add user hooperman to cups localhost:631
 sudo usermod -aG lpadmin hooperman
 
-# iniciar servicios
+# start services
 sudo ln -s /etc/sv/cupsd /var/service
 
-# remover xfce
+# remove xfce
 sudo xbps-remove -Ry xfce4* xfwm4
 
-# mover lxpolkit
+# move lxpolkit
 sudo mv /etc/xdg/autostart/lxpolkit.desktop /home/hooperman/Descargas
 
-# remover lxpolkit
-sudo rm /etc/xdg/autostart/lxpolkit.desktop
+# remove lxpolkit
+sudo rm /home/hooperman/Descargas/lxpolkit.desktop
 
-# instalar elogind
+# install elogind
 sudo xbps-install -Sy elogind
 
-# remover archivos huerfanos
+# remove orphaned files
 sudo xbps-remove -Oov
 
 sudo reboot
