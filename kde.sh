@@ -34,6 +34,5 @@ sudo xbps-remove -Ry xfce4* xfwm4
 # remove orphaned files
 sudo xbps-remove -Oov
 
-# start services
-sudo ln -s /etc/sv/cupsd /var/service
-sudo ln -s /etc/sv/sddm /var/service
+# sudo reboot
+sudo reboot
