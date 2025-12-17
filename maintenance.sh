@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# actualizar sistema
-sudo topgrade
+# update system
+topgrade
 
-# actualizar bloqueadores
+# update blockers
 sudo hblock
 
-# limpiar cache y borrar archivos huerfanos
+# clean cache and remove orphan files
+sudo rm -rf /home/hooperman/.cache/thumbnails/large/
+sudo rm -rf /home/hooperman/.cache/thumbnails/normal/
+sudo rm -rf /home/hooperman/.cache/thumbnails/x-large/
+sudo rm -rf /home/hooperman/.cache/thumbnails/xx-large/
 sudo xbps-remove -Oov
