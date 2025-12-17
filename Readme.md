@@ -1,7 +1,9 @@
-# dolphin root desktop kde admin file manager
-# bodhi lxde install from moksha
-# custom
-# kde install from xfce
-# lxde install from xfce
-# maintenance
-# start
+# Dolphin.Root.desktop kde admin file manager
+# JDownloader.flatpakref install for flatpak
+# Readme.md this file
+# bodhi.sh lxde install from moksha
+# custom.txt
+# kde.sh install from xfce
+# lxde.sh install from xfce
+# maintenance.sh
+# start.txt
