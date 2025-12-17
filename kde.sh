@@ -28,8 +28,12 @@ sudo cp -r Magna/ /usr/share/wallpapers/
 # añadir usuario a grupo cups localhost:631
 sudo usermod -aG lpadmin hooperman
 
+# remove xfce
+sudo xbps-remove -Ry xfce4* xfwm4
+
+# remove orphaned files
+sudo xbps-remove -Oov
+
 # iniciar servicios
 sudo ln -s /etc/sv/cupsd /var/service
 sudo ln -s /etc/sv/sddm /var/service
-
-# sudo reboot
