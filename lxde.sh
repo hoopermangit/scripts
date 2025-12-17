@@ -12,7 +12,7 @@ sudo xbps-install -Sy void-repo-nonfree void-repo-multilib void-repo-multilib-no
 sudo xbps-install -Suy
 
 # install packages
-sudo xbps-install -Sy 7zip 7zip-unrar barrier barrier bpytop chromium cups curl epson-inkjet-printer-escpr exfatprogs fastfetch filezilla flameshot galculator gparted gwenview hunspell-es iscan kolourpaint leafpad libreoffice libreoffice-i18n-es lxde mpv nano okular qbittorrent rsync smplayer wget
+sudo xbps-install -Sy 7zip 7zip-unrar barrier barrier bpytop chromium cups curl exfatprogs fastfetch filezilla flameshot galculator gparted gwenview hunspell-es kolourpaint leafpad libreoffice libreoffice-i18n-es lxde mpv nano okular qbittorrent rsync smplayer wget
 
 # install fonts
 sudo cp -r Menlo.Font/ Windows.Fonts/ JetBrainsMono.Font/ /usr/share/fonts/
