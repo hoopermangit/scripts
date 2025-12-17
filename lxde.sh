@@ -27,4 +27,19 @@ sudo usermod -aG lpadmin hooperman
 # iniciar servicios
 sudo ln -s /etc/sv/cupsd /var/service
 
-# sudo reboot
+# remover xfce
+sudo xbps-remove -Ry xfce4* xfwm4
+
+# mover lxpolkit
+sudo mv /etc/xdg/autostart/lxpolkit.desktop /home/hooperman/Descargas
+
+# remover lxpolkit
+sudo rm /etc/xdg/autostart/lxpolkit.desktop
+
+# instalar elogind
+sudo xbps-install -Sy elogind
+
+# remover archivos huerfanos
+sudo xbps-remove -Oov
+
+sudo reboot
