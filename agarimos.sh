@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# void linux install kde from xfce
+# void linux install kde from agarimos
 
 # remove firefox
 sudo xbps-remove -Ry firefox
