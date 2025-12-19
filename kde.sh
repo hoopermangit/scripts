@@ -12,7 +12,7 @@ sudo xbps-install -Sy void-repo-debug void-repo-nonfree void-repo-multilib void-
 sudo xbps-install -Suy
 
 # install packages
-sudo xbps-install -Sy ark bpytop chromium cups curl exfatprogs fastfetch ffmpegthumbs filezilla flatpak galculator gimp gparted gsmartcontrol gutenprint gwenview hblock hunspell-es kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer topgrade unrar wget xtools-minimal xournal
+sudo xbps-install -Sy ark bpytop chromium cups curl exfatprogs fastfetch ffmpegthumbs filezilla flatpak galculator gimp gparted gsmartcontrol gutenprint gwenview hblock hunspell-es kde5 kde5-baseapps kdenlive kolourpaint krita kwrite libreoffice libreoffice-i18n-es mkvtoolnix-gui mpv nano okular qbittorrent rsync smplayer spectacle topgrade unrar wget xtools-minimal xournal
 
 # install Jdownloader
 flatpak install --from JDownloader.flatpakref
