@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Svi
+Exec=sh -c 'pkexec env DISPLAY=$DISPLAY XAUTHORITY=$HOME/.Xauthority /usr/local/bin/svi'
+Comment=Void Linux Instalador Gráfico
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=system-installer
+Type=Application
+Categories=GTK;System;
+Comment[es_PA.UTF-8]=Instala el Sistema
+Name[es_PA]=svi
