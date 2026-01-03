@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Void-Installer
+Exec=sh -c "sudo python3 /usr/local/bin/installer/main.py; rm /usr/share/applications/autostart/install.desktop"
+Icon= /usr/local/bin/installer/install.png
+Terminal=false
+Hidden=false
+X-GNOME-Autostart-enabled=true
+
+
