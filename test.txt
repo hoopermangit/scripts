@@ -1,0 +1,5 @@
+sudo xbps-install -S xbps wget
+
+wget -O install.sh https://codeberg.org/LinuxNation/svi/raw/branch/main/install.sh && sudo sh install.sh
+
+sudo svi
