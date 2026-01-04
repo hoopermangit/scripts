@@ -53,13 +53,6 @@ xbps-install -Sy \
 xbps-install -Sy \
     cups \
     cups-filters \
-    hplip
-
-# NVIDIA Treiber (Non-Free)
-xbps-install -Sy \
-    nvidia \
-    nvidia-libs \
-    nvidia-dkms
 
 echo
 echo ">>> ¡Listo! Se han instalado todas las dependencias."
