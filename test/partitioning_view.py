@@ -126,7 +126,7 @@ class PartitioningView(Gtk.Box):
             disks = [d for d in disks if not d["name"].startswith("/dev/loop") and not d["name"].startswith("/dev/zram")]
             
             for d in disks:
-                model = d.get('model', '') or 'Unbekannt'
+                model = d.get('model', '')
                 label = f"{d['name']} ({d['size']}) - {model}"
                 self.combo_disk.append_text(label)
                 
