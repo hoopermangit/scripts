@@ -42,20 +42,6 @@ xbps-install -Sy \
     grub-i386-pc \
     efibootmgr
 
-# --- Optionale Komponenten (kannst du auskommentieren, falls nicht benötigt) ---
-
-# Flatpak Support
-xbps-install -Sy \
-    flatpak \
-    xdg-desktop-portal \
-    xdg-desktop-portal-gtk
-
-# Drucker Support (CUPS + Filter + HP)
-xbps-install -Sy \
-    cups \
-    cups-filters \
-    hplip
-
 echo
 echo ">>> Fertig! Alle Abhängigkeiten wurden installiert."
 echo ">>> Du kannst jetzt den Installer starten."
